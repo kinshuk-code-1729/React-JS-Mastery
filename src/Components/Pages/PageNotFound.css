@@ -1,0 +1,10 @@
+.hide-navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(172, 199, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
