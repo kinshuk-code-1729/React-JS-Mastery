@@ -32,3 +32,11 @@ ReactDOM.render(element, document.getElementById("root"));
 > ### 🕶 Output:
 
 # `Hello, Developer. Welcome to the world of ReactJS.`
+
+## 👓 ReactJS Advantages :
+
+- Composable: We can divide these codes and put them in custom components. Then we can utilize those components and integrate them into one place.
+- Declarative: In react the DOM is declarative. We can make interactive UIs by changing the state of the component and React takes care of updating the DOM according to it.
+- SEO Friendly: React affects the SEO by giving you a SPA (Single Page Application) which requires Javascript to show the content on the page which can be rendered and indexed.
+- Community: React has a huge community because of it’s demand each company wants to work with React. Companies like Meta, Netflix, etc built on React.
+- Easy to learn: HTML-like syntax of JSX make you comfortable with the codes of React, it only requires to need a basic knowledge of HTML, CSS, and JS fundamentals to start working with it.
