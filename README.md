@@ -29,6 +29,6 @@ var element = <h1>Hello, {name}.Welcome to the world of ReactJS.</h1>;
 ReactDOM.render(element, document.getElementById("root"));
 ```
 
-### Output:
+### 🕶 Output:
 
 # `Hello, Developer. Welcome to the world of ReactJS.`
