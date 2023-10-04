@@ -9,9 +9,26 @@
 - It designs simple views for each state in our application, and **React** will efficiently **_update_** and **_render_** just the right _component_ when our data changes.
 - The declarative view makes our code more predictable and easier to debug.
 
-## React Features:
+## ✨ React Features ✨ :
 - **Use JSX: _JSX_** is faster than normal JavaScript as it performs optimizations while translating to regular JavaScript. It makes it easier for us to create templates.
 - **Virtual DOM: _Virtual DOM_** exists which is like a lightweight copy of the actual DOM. So for every object that exists in the original DOM, there is an object for that in React Virtual DOM. It is exactly the same, but it does not have the power to directly change the layout of the document. Manipulating DOM is slow, but manipulating Virtual DOM is fast as nothing gets drawn on the screen.
 - **One-way Data Binding: _One-way data binding_** gives you better view over your application.
 - **Component:** A **_Component_** is one of the core building blocks of React. In other words, we can say that every application you will develop in React will be made up of pieces called components. Components make the task of building UIs much easier.
 - **Performance:** ReactJS use JSX, which is faster compared to normal JavaScript and HTML. Virtual DOM is a less time taking procedure to update webpages content.
+
+## 🛑 React strictly follows _JSX_ Syntax i.e. _"JavaScript XML"_.
+> ### 💻 Sample *App.js* code :
+```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+ 
+var name = "Developer";
+ 
+var element = <h1>Hello, {name}.Welcome to the world of ReactJS.</h1>;
+ 
+ReactDOM.render(element, document.getElementById("root"));
+```
+
+> ### 🕶 Output:
+
+# `Hello, Developer. Welcome to the world of ReactJS.`
