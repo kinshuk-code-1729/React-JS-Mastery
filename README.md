@@ -15,3 +15,16 @@
 - **One-way Data Binding: _One-way data binding_** gives you better view over your application.
 - **Component:** A **_Component_** is one of the core building blocks of React. In other words, we can say that every application you will develop in React will be made up of pieces called components. Components make the task of building UIs much easier.
 - **Performance:** ReactJS use JSX, which is faster compared to normal JavaScript and HTML. Virtual DOM is a less time taking procedure to update webpages content.
+
+## React strictly follows _JSX_ Syntax i.e. _"JavaScript XML"_.
+### -> Sample *App.js* code :
+```javascript
+import React from "react";
+import ReactDOM from "react-dom";
+ 
+var name = "Developer";
+ 
+var element = <h1>Hello, {name}.Welcome to the world of ReactJS.</h1>;
+ 
+ReactDOM.render(element, document.getElementById("root"));
+```
