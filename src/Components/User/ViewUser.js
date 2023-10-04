@@ -19,7 +19,9 @@ const ViewUser = () => {
   }
 
   return (
-    <div>ViewUser</div>
+    <div>
+      Hello User {user.name}
+    </div>
   )
 }
 
