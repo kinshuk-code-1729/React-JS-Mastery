@@ -17,7 +17,7 @@
 - **Performance:** ReactJS use JSX, which is faster compared to normal JavaScript and HTML. Virtual DOM is a less time taking procedure to update webpages content.
 
 ## 🛑 React strictly follows _JSX_ Syntax i.e. _"JavaScript XML"_.
-### -> Sample *App.js* code :
+> ### 💻 Sample *App.js* code :
 ```javascript
 import React from "react";
 import ReactDOM from "react-dom";
@@ -29,6 +29,6 @@ var element = <h1>Hello, {name}.Welcome to the world of ReactJS.</h1>;
 ReactDOM.render(element, document.getElementById("root"));
 ```
 
-### 🕶 Output:
+> ### 🕶 Output:
 
 # `Hello, Developer. Welcome to the world of ReactJS.`
