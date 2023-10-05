@@ -1,8 +1,7 @@
 import React,{useEffect, useState} from 'react'
 import axios from 'axios'
-import Table from 'react-bootstrap/Table';
 import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
+import { Button, Table, Spinner } from 'react-bootstrap';
 
 /* function Home() {
   return (
@@ -13,6 +12,7 @@ import { Button } from 'react-bootstrap';
 const Home = () =>{
 
     const [users, setUsers] = useState([]); // Creating users array & Setter Method and array would be empty [] by default
+    const [loading, setLoading] = useState(true);
     
     // Called on load of the component only once because dependancy array is empty
     useEffect(()=>{
@@ -24,6 +24,7 @@ const Home = () =>{
       const result = await axios.get("http://localhost:5000/users");
       console.log(result);
       setUsers(result.data);
+      setLoading(false);
       // setUsers(result.data.reverse());
       console.log("After axios call");
     }
@@ -49,6 +50,8 @@ const Home = () =>{
 
     return(
         <div className="container">
+          {users.length < 1 ? <Spinner animation="border" variant="success" className="p-3" /> :
+          <div>
             <h2 className="py-3">User Management System</h2>
             
             <Table striped bordered hover variant="dark">
@@ -89,6 +92,7 @@ const Home = () =>{
                 }
               </tbody>
             </Table>
+            </div> }
         </div>
     )
 }
