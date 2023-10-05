@@ -33,7 +33,7 @@ const Home = () =>{
       getAllUsersWithAwait();
     }
 
-    const getAllUsers = ()=>{
+    /*const getAllUsers = ()=>{
 
       axios.get("http://localhost:5000/users")
       .then(function(response){
@@ -45,7 +45,7 @@ const Home = () =>{
       }); // If error occured while fetching data from API 
 
       console.log("After axios API call");
-    }
+    }*/
 
     return(
         <div className="container">
