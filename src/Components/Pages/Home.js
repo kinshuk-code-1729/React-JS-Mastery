@@ -50,7 +50,8 @@ const Home = () =>{
 
     return(
         <div className="container">
-          {users.length < 1 ? <Spinner animation="border" variant="success" className="p-3" /> :
+          {/* "users.length < 1" can be used in place of "loading" */}
+          {loading ? <Spinner animation="border" variant="success" className="p-3" /> :
           <div>
             <h2 className="py-3">User Management System</h2>
             
