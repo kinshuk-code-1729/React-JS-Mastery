@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "json-server": "^0.17.3"
   }
 }
